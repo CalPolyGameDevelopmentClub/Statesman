@@ -7,6 +7,7 @@ public interface I_Playerstate {
 	void onExit (Transform player);
 
 	// Update is called once per frame
-	void Update (Transform player, float dt);
-	void handleInput(Transform player);
+	I_Playerstate Update (Transform player, float dt);
+	I_Playerstate handleInput(Transform player);
+	I_Playerstate onCollisionEnter(Transform player, Collision c);
 }
